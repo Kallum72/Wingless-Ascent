@@ -32,7 +32,7 @@ public class CameraControl : MonoBehaviour
 
 
 
-        mouseY = Mathf.Clamp(mouseY, -35, 60);
+        mouseY = Mathf.Clamp(mouseY, -75, 60);
 
         Quaternion rootRotation = Quaternion.Euler(0, mouseX, -mouseY);
 

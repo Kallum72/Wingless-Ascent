@@ -35,6 +35,14 @@ public class PlayerController : MonoBehaviour
         moveDirection = (forward * V2Input.y) + (right * V2Input.x);
 
         hips.AddForce(moveDirection.normalized * speed * Time.deltaTime, ForceMode.Impulse);
+
+        if (isGrounded)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
+        }
     }
 
     public void Jump()
