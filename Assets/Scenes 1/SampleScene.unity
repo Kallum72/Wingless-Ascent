@@ -1978,6 +1978,114 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1301711178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &445395293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445395297}
+  - component: {fileID: 445395296}
+  - component: {fileID: 445395295}
+  - component: {fileID: 445395294}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &445395294
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445395293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &445395295
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445395293}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &445395296
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445395293}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &445395297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445395293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 33.29, y: 33.29, z: 33.29}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475715989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,6 +3305,99 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1301711178}
   m_LocalEulerAnglesHint: {x: -35.766, y: 13.787, z: -21.272}
+--- !u!1 &621015953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621015956}
+  - component: {fileID: 621015955}
+  - component: {fileID: 621015954}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &621015954
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621015953}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: c26d859247bdd9d4d899971d6087dec5, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &621015955
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621015953}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 0}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &621015956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621015953}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &624272406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3293,10 +3494,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0038806298
-  m_Height: 0.019403148
+  m_Radius: 0.002
+  m_Height: 0.01
   m_Direction: 1
-  m_Center: {x: 0, y: 0.009701574, z: 0}
+  m_Center: {x: 0, y: 0.008, z: 0}
 --- !u!1 &651817860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,99 +3563,6 @@ MonoBehaviour:
   holdRightObj: {fileID: 555605475}
   holdLeftObj: {fileID: 1756378020}
   anim: {fileID: 1337577924}
---- !u!1 &663989578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 663989581}
-  - component: {fileID: 663989580}
-  - component: {fileID: 663989579}
-  m_Layer: 0
-  m_Name: Terrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!154 &663989579
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663989578}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 99260f52a23102a498613e5e787b2ee4, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &663989580
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663989578}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 99260f52a23102a498613e5e787b2ee4, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMinimumLODSimplification: 0
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
---- !u!4 &663989581
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663989578}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0906582, y: 2.1293645, z: 3.5109968}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1301711178}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679431845
 GameObject:
   m_ObjectHideFlags: 0
@@ -5153,6 +5261,73 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789142060}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &793286374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793286375}
+  - component: {fileID: 793286376}
+  - component: {fileID: 793286377}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793286375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793286374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.25926796, y: -0.65786034, z: -0.25926813, w: -0.65786016}
+  m_LocalPosition: {x: 0.009138792, y: 0.0029074345, z: 0}
+  m_LocalScale: {x: 0.009999998, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5546456142045308628}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &793286376
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793286374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.07
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &793286377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793286374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6f6f7e6b04a454f8c623f01587c96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 5546456142045308629}
 --- !u!1 &827627897
 GameObject:
   m_ObjectHideFlags: 0
@@ -8755,7 +8930,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 663989581}
   - {fileID: 769927705}
   - {fileID: 475715994}
   - {fileID: 688369238}
@@ -9231,10 +9405,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0038806347
-  m_Height: 0.019403173
+  m_Radius: 0.002
+  m_Height: 0.01
   m_Direction: 1
-  m_Center: {x: 0, y: 0.009701586, z: 0}
+  m_Center: {x: 0, y: 0.008, z: 0}
 --- !u!1 &1408027132
 GameObject:
   m_ObjectHideFlags: 0
@@ -10028,7 +10202,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4485395384693110543}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9548a135bb1b04640ae191a3350760b9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -12658,7 +12832,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153965406565688348}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9548a135bb1b04640ae191a3350760b9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -15294,7 +15468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332331505695736065}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Wing R_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15331,7 +15505,7 @@ GameObject:
   - component: {fileID: 5546456142045308629}
   - component: {fileID: 5546456142045308630}
   - component: {fileID: 5546456142045308631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15347,7 +15521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7779316939102297892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back claw R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15366,7 +15540,7 @@ GameObject:
   - component: {fileID: 1850766300}
   - component: {fileID: 1850766299}
   - component: {fileID: 4305986134135641325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back claw L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15397,7 +15571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3455398509970596870}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Wing L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15417,7 +15591,7 @@ GameObject:
   - component: {fileID: 1865171548}
   - component: {fileID: 6290099586389501315}
   - component: {fileID: 6290099586389501316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Leg R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15433,7 +15607,7 @@ Transform:
   m_GameObject: {fileID: 919132149210710714}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.31, y: 0.059, z: 5.65}
+  m_LocalPosition: {x: 3.31, y: 0.13, z: 5.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15451,7 +15625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2543354367621483458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15467,7 +15641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7152075329148023259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Claws R_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15568,7 +15742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5066347688396625}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15615,7 +15789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3947099158291449011}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15647,7 +15821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4903342895165543450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back claw L_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15728,7 +15902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3671106768452011340}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Claws L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15807,8 +15981,8 @@ Transform:
   m_GameObject: {fileID: 6309903937172666509}
   serializedVersion: 2
   m_LocalRotation: {x: -0.16873506, y: 0.067543425, z: -0.23704833, w: 0.95434505}
-  m_LocalPosition: {x: -1.4901161e-10, y: 0.011490764, z: -0.0000000011920929}
-  m_LocalScale: {x: 0.99999976, y: 0.9999998, z: 1}
+  m_LocalPosition: {x: 0, y: 0.011490764, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 66397705039681324}
@@ -15921,13 +16095,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -15960,7 +16134,7 @@ GameObject:
   - component: {fileID: 1456805901}
   - component: {fileID: 1456805900}
   - component: {fileID: 6804850681648014389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back claw R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15976,7 +16150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1027144681806340312}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back claw L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16056,7 +16230,7 @@ GameObject:
   - component: {fileID: 871554985}
   - component: {fileID: 871554983}
   - component: {fileID: 5310666335967815974}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16138,13 +16312,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -16184,6 +16358,7 @@ Transform:
   - {fileID: 8912537933097665154}
   - {fileID: 1258576626476693569}
   - {fileID: 2543354367621483458}
+  - {fileID: 793286375}
   m_Father: {fileID: 8879528566770043038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5546456142045308629
@@ -16198,10 +16373,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1fbb736172b0d40993f3e2ff0fed4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
-  strafeSpeed: 100
-  jumpForce: 1238.4
-  hips: {fileID: 1274715740}
+  speed: 150
+  strafeSpeed: 250
+  jumpForce: 0
+  hips: {fileID: 1669566839}
   isGrounded: 0
   playerInput: {fileID: 5546456142045308630}
   moveDirection: {x: 0, y: 0, z: 0}
@@ -16402,7 +16577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2462987558227645667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Claws L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16418,7 +16593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204791034837429942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Wing L_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16438,7 +16613,7 @@ GameObject:
   - component: {fileID: 624272406}
   - component: {fileID: 5847172033199637776}
   - component: {fileID: 5847172033199637777}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Wing R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16520,13 +16695,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -16570,7 +16745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7509938469549097473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Claws R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16669,13 +16844,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -16723,7 +16898,7 @@ GameObject:
   - component: {fileID: 634715708}
   - component: {fileID: 6309903937172666510}
   - component: {fileID: 6309903937172666511}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Wing R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16805,13 +16980,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -16846,7 +17021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amLeft: 1
   grab: {fileID: 651817862}
-  myKey: 101
+  myKey: 324
 --- !u!1 &6506725326950103913
 GameObject:
   m_ObjectHideFlags: 0
@@ -16856,7 +17031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1838760921739066147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16876,7 +17051,7 @@ GameObject:
   - component: {fileID: 757831213}
   - component: {fileID: 8912537933097665155}
   - component: {fileID: 8912537933097665156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Wing L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16895,7 +17070,7 @@ GameObject:
   - component: {fileID: 1586657}
   - component: {fileID: 1586656}
   - component: {fileID: 6725195536514930748}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16977,13 +17152,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -17013,7 +17188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1224965395677499657}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Finger R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17029,7 +17204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7263439104734595054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Finger L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17127,13 +17302,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -17163,7 +17338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4202818710403422180}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Claws R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17183,7 +17358,7 @@ GameObject:
   - component: {fileID: 1374643752}
   - component: {fileID: 6959861064335608347}
   - component: {fileID: 6959861064335608348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Wing L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17265,13 +17440,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -17306,7 +17481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amLeft: 0
   grab: {fileID: 651817862}
-  myKey: 113
+  myKey: 323
 --- !u!1 &7014591112380511647
 GameObject:
   m_ObjectHideFlags: 0
@@ -17316,7 +17491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4875227960514239057}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back claw R_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17507,7 +17682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 66397705039681324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Wing R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17527,7 +17702,7 @@ GameObject:
   - component: {fileID: 1274715740}
   - component: {fileID: 8328507519158980241}
   - component: {fileID: 8328507519158980242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Leg L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17609,13 +17784,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -17659,7 +17834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9096025602056242541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17773,13 +17948,13 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 513.06
+    positionSpring: 770.9
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 570.9
+    positionSpring: 884.4
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -17840,3 +18015,5 @@ SceneRoots:
   - {fileID: 543450653686028288}
   - {fileID: 1290396002}
   - {fileID: 7162936951188423992}
+  - {fileID: 621015956}
+  - {fileID: 445395297}

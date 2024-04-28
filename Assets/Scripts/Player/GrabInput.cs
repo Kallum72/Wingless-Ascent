@@ -79,38 +79,38 @@ public class GrabInput : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision col)
-    {
-        if (holdLeft && col.transform.tag != "Player")
-        {
-            Debug.Log("Attempting To Hold Right");
+    //private void OnCollisionEnter(Collision col)
+    //{
+    //    if (holdLeft && col.transform.tag != "Player")
+    //    {
+    //        Debug.Log("Attempting To Hold Right");
 
-            Rigidbody rb = col.transform.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                FixedJoint fj = holdLeftObj.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
-                fj.connectedBody = rb;
-            }
-            else
-            {
-                FixedJoint fj = transform.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
-            }
-        }
+    //        Rigidbody rb = col.transform.GetComponent<Rigidbody>();
+    //        if (rb != null)
+    //        {
+    //            FixedJoint fj = holdLeftObj.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
+    //            fj.connectedBody = rb;
+    //        }
+    //        else
+    //        {
+    //            FixedJoint fj = transform.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
+    //        }
+    //    }
 
-        if (holdRight && col.transform.tag != "Player")
-        {
+    //    if (holdRight && col.transform.tag != "Player")
+    //    {
 
-            Debug.Log("Attempting To Hold Right");
-            Rigidbody rb = col.transform.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                FixedJoint fj = holdRightObj.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
-                fj.connectedBody = rb;
-            }
-            else
-            {
-                FixedJoint fj = transform.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
-            }
-        }
-    }
+    //        Debug.Log("Attempting To Hold Right");
+    //        Rigidbody rb = col.transform.GetComponent<Rigidbody>();
+    //        if (rb != null)
+    //        {
+    //            FixedJoint fj = holdRightObj.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
+    //            fj.connectedBody = rb;
+    //        }
+    //        else
+    //        {
+    //            FixedJoint fj = transform.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
+    //        }
+    //    }
+    //}
 }
