@@ -17,10 +17,11 @@ MonoBehaviour:
     text: Hello.
     children:
     - 2
+    - 3
     rect:
       serializedVersion: 2
-      x: 365.6
-      y: 124
+      x: 0.000030517578
+      y: 175.20003
       width: 200
       height: 100
   - uniqueID: 2
@@ -28,16 +29,16 @@ MonoBehaviour:
     children: []
     rect:
       serializedVersion: 2
-      x: 0
-      y: 0
+      x: 324.00003
+      y: 85.59999
       width: 200
-      height: 200
+      height: 100
   - uniqueID: 3
-    text: You really stink. like proper proper stink
+    text: Hello :))
     children: []
     rect:
       serializedVersion: 2
-      x: 0
-      y: 0
+      x: 335.99994
+      y: 265.60004
       width: 200
-      height: 200
+      height: 100

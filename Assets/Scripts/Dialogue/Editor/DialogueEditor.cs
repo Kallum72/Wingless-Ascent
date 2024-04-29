@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using System;
+using UnityEditor.UI;
 
 namespace DialogueName.Editor
 {
@@ -12,8 +13,8 @@ namespace DialogueName.Editor
 
         Dialogue SelectedDialogue = null;
         GUIStyle nodeStyle = null;
-
-        bool dragging = false;
+        DialogueNode draggingNode = null;
+        Vector2 draggingOffset; 
 
         [MenuItem("Window/Dialogue Editor")]
         public static void ShowEditorWindow()
@@ -65,32 +66,41 @@ namespace DialogueName.Editor
                 ProcessEvents();
                 foreach (DialogueNode node in SelectedDialogue.GetAllNodes())
                 {
-                    OnGUINode(node);
+                    DrawNode(node);
+                    DrawConnections(node);
                 }
             }
             
         }
 
+       
+
         private void ProcessEvents()
         {
-            if((Event.current.type == EventType.MouseDown) && (!dragging))
+            if(Event.current.type == EventType.MouseDown && draggingNode == null)
             {
-                dragging = true;
+                draggingNode = GetNodeAtPoint(Event.current.mousePosition);
+                if(draggingNode != null)
+                {
+                        draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
+                }
             }
-            else if(Event.current.type == EventType.MouseDrag && dragging)
+            else if(Event.current.type == EventType.MouseDrag && draggingNode != null)
             {
                 Undo.RecordObject(SelectedDialogue, "Move Node");
-                SelectedDialogue.GetRootNode().rect.position = Event.current.mousePosition;
+                draggingNode.rect.position = Event.current.mousePosition + draggingOffset;
                 GUI.changed = true;
 
             }
-            else if ((Event.current.type == EventType.MouseUp) && (dragging))
+            else if (Event.current.type == EventType.MouseUp && draggingNode != null)
             {
-                dragging = false;
+                draggingNode = null;
             }
         }
 
-        private void OnGUINode(DialogueNode node)
+       
+
+        private void DrawNode(DialogueNode node)
         {
             GUILayout.BeginArea(node.rect, nodeStyle);
             EditorGUI.BeginChangeCheck();
@@ -107,7 +117,39 @@ namespace DialogueName.Editor
                 node.uniqueID = newUniqueID;
             }
 
+            foreach(DialogueNode childNode in SelectedDialogue.GetAllChildren(node))
+            {
+                EditorGUILayout.LabelField(childNode.text);
+
+            }
+
+
             GUILayout.EndArea();
+        }
+
+        private void DrawConnections(DialogueNode node)
+        {
+            Vector3 startPosition = new Vector2(node.rect.xMax, node.rect.center.y);
+
+            foreach (DialogueNode childNode in SelectedDialogue.GetAllChildren(node))
+            {
+                Vector3 endPosition = new Vector2(childNode.rect.xMin, childNode.rect.center.y);
+                Vector3 controlPointOffset = new Vector2(100, 0);
+                Handles.DrawBezier(startPosition, endPosition,startPosition + controlPointOffset,endPosition - controlPointOffset, Color.white, null, 4f);
+            }
+        }
+
+        private DialogueNode GetNodeAtPoint(Vector2 point)
+        {
+            DialogueNode foundNode = null;
+            foreach(DialogueNode node in SelectedDialogue.GetAllNodes())
+            {
+                if (node.rect.Contains(point))
+                {
+                    foundNode = node;
+                }
+            }
+            return foundNode;
         }
     }
     

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,7 @@ namespace DialogueName
         [SerializeField]
         List<DialogueNode> nodes = new List<DialogueNode>();
 
-
+        Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 #if UNITY_EDITOR
         private void Reset()
         {
@@ -21,7 +22,22 @@ namespace DialogueName
             }
         }
 
+        private void Awake()
+        {
+            OnValidate();
+        }
+
 #endif
+
+        private void OnValidate()
+        {
+            nodeLookup.Clear();
+            foreach(DialogueNode node in GetAllNodes())
+            {
+                nodeLookup[node.uniqueID] = node;
+                
+            }
+        }
         public IEnumerable<DialogueNode> GetAllNodes()
         {
             return nodes;
@@ -30,6 +46,18 @@ namespace DialogueName
         public DialogueNode GetRootNode()
         {
             return nodes[0];
+        }
+
+        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
+        {
+            foreach(string childID in parentNode.children)
+            {
+                if (nodeLookup.ContainsKey(childID))
+                {
+                   yield return (nodeLookup[childID]);
+
+                }
+            }
         }
     }
 
