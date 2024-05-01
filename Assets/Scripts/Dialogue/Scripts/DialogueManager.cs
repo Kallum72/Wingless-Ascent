@@ -15,7 +15,9 @@ public class DialogueManager : MonoBehaviour
     Dialogue currentDialogue;
     void Start()
     {
-        
+        dialogueBG.gameObject.SetActive(false);
+        speaker.gameObject.SetActive(false);
+        bodyText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +32,8 @@ public class DialogueManager : MonoBehaviour
                     inDialogue = false;
                     Debug.Log("It end");
                     speaker.gameObject.SetActive(false);
+                    dialogueBG.gameObject.SetActive(false);
+
                     bodyText.gameObject.SetActive(false);
                     currentLine = 0;
                 }
@@ -52,6 +56,7 @@ public class DialogueManager : MonoBehaviour
         inDialogue = true;
         currentDialogue = dialogueToStart;  
         Debug.Log("DialogueStart");
+        dialogueBG.gameObject.SetActive(true);
         speaker.gameObject.SetActive(true);
         bodyText.gameObject.SetActive(true);
         dialogueBG.sprite = dialogueToStart.dialogueBox;
