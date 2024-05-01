@@ -2744,6 +2744,7 @@ MonoBehaviour:
   amLeft: 1
   grab: {fileID: 651817862}
   myKey: 101
+  myKeyUp: 0
 --- !u!1 &556515110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3544,8 @@ MonoBehaviour:
   grab: {fileID: 0}
   KeyCodeLeft: 113
   KeyCodeRight: 101
+  KeyCodeLeftUp: 0
+  KeyCodeRightUp: 0
   holdLeft: 0
   holdRight: 0
   holdRightObj: {fileID: 555605475}
@@ -4465,7 +4468,7 @@ GameObject:
   - component: {fileID: 732887208}
   - component: {fileID: 732887207}
   - component: {fileID: 732887206}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -8335,6 +8338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7fc18cde672b344ca2efc2dae6bd128, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8912537933109443945, guid: a7fc18cde672b344ca2efc2dae6bd128, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.004810639
@@ -9152,7 +9159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1337577924
 Animator:
   serializedVersion: 7
@@ -10023,7 +10030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431146177}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12164,6 +12171,7 @@ MonoBehaviour:
   amLeft: 0
   grab: {fileID: 651817862}
   myKey: 113
+  myKeyUp: 0
 --- !u!1 &1782315630
 GameObject:
   m_ObjectHideFlags: 0
@@ -14374,7 +14382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2029833063}
   - component: {fileID: 2029833064}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: root (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15644,7 +15652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450653686028288}
   - component: {fileID: 919132149210710715}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15666,6 +15674,8 @@ MonoBehaviour:
   grab: {fileID: 0}
   KeyCodeLeft: 323
   KeyCodeRight: 324
+  KeyCodeLeftUp: 113
+  KeyCodeRightUp: 101
   holdLeft: 0
   holdRight: 0
   holdRightObj: {fileID: 6959861064335608346}
@@ -15824,7 +15834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4931218026280868831}
   - component: {fileID: 7205140776216236664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17008,8 +17018,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amLeft: 1
-  grab: {fileID: 651817862}
+  grab: {fileID: 919132149210710715}
   myKey: 324
+  myKeyUp: 101
 --- !u!1 &6506725326950103913
 GameObject:
   m_ObjectHideFlags: 0
@@ -17481,8 +17492,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amLeft: 0
-  grab: {fileID: 651817862}
+  grab: {fileID: 919132149210710715}
   myKey: 323
+  myKeyUp: 113
 --- !u!1 &7014591112380511647
 GameObject:
   m_ObjectHideFlags: 0
@@ -17508,7 +17520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8879528566770043038}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}

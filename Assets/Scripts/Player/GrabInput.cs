@@ -8,6 +8,9 @@ public class GrabInput : MonoBehaviour
     public Grab grab;
     public KeyCode KeyCodeLeft;
     public KeyCode KeyCodeRight;
+    public KeyCode KeyCodeLeftUp;
+    public KeyCode KeyCodeRightUp;
+
     bool isRight;
 
     public bool holdLeft;
@@ -58,24 +61,52 @@ public class GrabInput : MonoBehaviour
 
         //}
 
+        
 
-        if (Input.GetKey(KeyCodeLeft))
+        if (Input.GetKey(KeyCodeLeftUp))
         {
-            anim.SetBool("HandRightUp", true);
+            anim.SetBool("RightUp", true);
             holdLeft = true;
         }
-        else if (Input.GetKey(KeyCodeRight))
+        else
         {
-            anim.SetBool("HandLeftUp", true);
+            anim.SetBool("RightUp", false);
+            holdLeft = false;
+        }
+
+        if (Input.GetKey(KeyCodeRightUp))
+        {
+            anim.SetBool("LeftUp", true);
             holdRight = true;
         }
-        else if(!Input.GetKey(KeyCodeLeft) && (!Input.GetKey(KeyCodeRight)))
+        else
         {
-            anim.SetBool("HandLeftUp", false);
-            anim.SetBool("HandRightUp", false);
-            holdLeft = false;
+            anim.SetBool("LeftUp", false);
             holdRight = false;
         }
+
+
+        //if (Input.GetKey(KeyCodeLeft))
+        //{
+        //    anim.SetBool("HandRightUp", true);
+        //    holdLeft = true;
+        //}
+        //else
+        //{
+        //    anim.SetBool("HandRightUp", false); 
+        //    holdRight = false;
+        //}
+        
+        //if(Input.GetKey(KeyCodeRight))
+        //{
+        //    anim.SetBool("HandLeftUp", true);
+        //    holdRight = true;
+        //}
+        //else
+        //{
+        //    anim.SetBool("HandLeftUp", false);
+        //    holdLeft = false;
+        //}
     }
 
 

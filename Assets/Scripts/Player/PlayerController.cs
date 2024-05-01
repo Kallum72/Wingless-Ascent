@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = ground.isGrounded;
         Vector2 V2Input = playerInput.actions["Move"].ReadValue<Vector2>();
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        Vector3 right = transform.TransformDirection(Vector3.right);
+        Vector3 forward = transform.TransformDirection(Vector3.right);
+        Vector3 right = transform.TransformDirection(Vector3.forward);
         moveDirection = (forward * V2Input.y) + (right * V2Input.x);
         moveDirection.y = 0;
         hips.AddForce(moveDirection.normalized * speed * Time.deltaTime, ForceMode.Impulse);

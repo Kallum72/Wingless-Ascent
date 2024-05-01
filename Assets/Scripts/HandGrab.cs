@@ -10,6 +10,7 @@ public class HandGrab : MonoBehaviour
     public GrabInput grab;
 
     public KeyCode myKey;
+    public KeyCode myKeyUp;
     void Start()
     {
         
@@ -18,7 +19,10 @@ public class HandGrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(myKey))
+
+
+
+        if (Input.GetKey(myKey) || Input.GetKey(myKeyUp))
         {
             amHolding = true;
         }
