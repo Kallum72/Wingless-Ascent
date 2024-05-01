@@ -10,5 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff2e965517313374fb1414d5b69c2f0a, type: 3}
-  m_Name: New Dialogue
+  m_Name: Penguin
   m_EditorClassIdentifier: 
+  lines:
+  - {fileID: 11400000, guid: b244bbfe7d0486742af205659a8dd3e8, type: 2}
+  - {fileID: 11400000, guid: 11d553941ab5eda4587ad1577bada06d, type: 2}
+  dialogueBox: {fileID: 21300000, guid: fcd7364738f30d945b864d3d012622c4, type: 3}

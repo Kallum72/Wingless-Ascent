@@ -18,13 +18,13 @@ public class HandGrab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (amLeft)
+        if (Input.GetKey(myKey))
         {
-            amHolding = grab.holdRight;
+            amHolding = true;
         }
         else
         {
-            amHolding = grab.holdLeft;
+            amHolding = false;
         }
 
         if(!amHolding)
@@ -35,7 +35,7 @@ public class HandGrab : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (amHolding && col.transform.tag != "Player")
+        if (amHolding && col.gameObject.tag != "Player")
         {
             Debug.Log("Holding?");
 
