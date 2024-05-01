@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraControl : MonoBehaviour
 {
@@ -11,7 +12,13 @@ public class CameraControl : MonoBehaviour
 
     public float stomachOffset;
 
+    public PlayerInput playerInput;
+
+    bool controllingArm;
+    public GrabInput grabInput;
     public ConfigurableJoint hipJoint, stomachJoint;
+
+    Vector2 CamInput;
 
     void Start()
     {
@@ -20,15 +27,20 @@ public class CameraControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        CamControl();
+        if(!controllingArm)
+        {
+            CamControl();
 
+        }
 
+        CamInput = playerInput.actions["Look"].ReadValue<Vector2>();
+        controllingArm = grabInput.amControllingArm;
     }
 
     void CamControl()
     {
-             mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
-            mouseY -= Input.GetAxis("Mouse Y") * rotationSpeed;
+             mouseX += CamInput.x * rotationSpeed;
+            mouseY -= CamInput.y * rotationSpeed;
 
 
 

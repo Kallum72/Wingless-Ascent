@@ -188,28 +188,6 @@
                 },
                 {
                     "name": "",
-                    "id": "9cc7bd7a-0324-4f23-8395-0082eb7c1387",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightGrab",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f85eae89-660f-4581-997b-22d924d50303",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightGrab",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "d58ecc21-3bad-494c-969a-b7c7e542031e",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
@@ -227,6 +205,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "LeftGrab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9cc7bd7a-0324-4f23-8395-0082eb7c1387",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightGrab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f85eae89-660f-4581-997b-22d924d50303",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightGrab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

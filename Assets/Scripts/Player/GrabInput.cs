@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 
 public class GrabInput : MonoBehaviour
@@ -13,25 +14,41 @@ public class GrabInput : MonoBehaviour
 
     bool isRight;
 
+    public PlayerInput playerInput;
+
+
     public bool holdLeft;
     public bool holdRight;
 
     public GameObject holdRightObj;
     public GameObject holdLeftObj;
 
+    public bool amControllingArm;
+
     public Animator anim;
-    void Start()
+
+
+    private void OnEnable()
     {
-       
+        playerInput.enabled = true;
+    }
+    private void OnDisable()
+    {
+        playerInput.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Vector2 V2Input = playerInput.actions["Look"].ReadValue<Vector2>();
+
+        
+
         //if (grab.canGrab)
         //{
         //    if (Input.GetKey(myKey))
         //    {
+        //        grab.animator.SetBool("HandRightUp", true);
         //        grab.animator.SetBool("HandRightUp", true);
         //        Debug.Log("Left");
         //        grab.hold = true;
@@ -61,27 +78,31 @@ public class GrabInput : MonoBehaviour
 
         //}
 
-        
+
 
         if (Input.GetKey(KeyCodeLeftUp))
         {
-            anim.SetBool("RightUp", true);
+            anim.SetFloat("RightX", V2Input.x);
+            anim.SetFloat("RightY", V2Input.y);
+            anim.SetBool("HandRightUp", true);
+            amControllingArm = true;
             holdLeft = true;
         }
         else
         {
-            anim.SetBool("RightUp", false);
+            amControllingArm = false;
+            anim.SetBool("HandRightUp", false);
             holdLeft = false;
         }
 
         if (Input.GetKey(KeyCodeRightUp))
         {
-            anim.SetBool("LeftUp", true);
+            //anim.SetBool("LeftUp", true);
             holdRight = true;
         }
         else
         {
-            anim.SetBool("LeftUp", false);
+          //  anim.SetBool("LeftUp", false);
             holdRight = false;
         }
 

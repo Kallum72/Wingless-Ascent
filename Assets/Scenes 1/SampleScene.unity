@@ -3546,6 +3546,7 @@ MonoBehaviour:
   KeyCodeRight: 101
   KeyCodeLeftUp: 0
   KeyCodeRightUp: 0
+  playerInput: {fileID: 0}
   holdLeft: 0
   holdRight: 0
   holdRightObj: {fileID: 555605475}
@@ -4502,11 +4503,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2e64663b9ce3d49a718cf403248129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 5
+  rotationSpeed: 2
   root: {fileID: 1431146177}
   mouseX: 0
   mouseY: 0
   stomachOffset: 0
+  playerInput: {fileID: 5546456142045308630}
   hipJoint: {fileID: 5546456142045308631}
   stomachJoint: {fileID: 5310666335967815974}
 --- !u!81 &732887207
@@ -6604,6 +6606,7 @@ MonoBehaviour:
   mouseX: 0
   mouseY: 0
   stomachOffset: 0
+  playerInput: {fileID: 0}
   hipJoint: {fileID: 934926344}
   stomachJoint: {fileID: 1585311816}
 --- !u!1 &968709825
@@ -15674,8 +15677,9 @@ MonoBehaviour:
   grab: {fileID: 0}
   KeyCodeLeft: 323
   KeyCodeRight: 324
-  KeyCodeLeftUp: 113
+  KeyCodeLeftUp: 334
   KeyCodeRightUp: 101
+  playerInput: {fileID: 5546456142045308630}
   holdLeft: 0
   holdRight: 0
   holdRightObj: {fileID: 6959861064335608346}
