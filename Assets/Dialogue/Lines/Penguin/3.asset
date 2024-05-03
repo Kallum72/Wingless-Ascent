@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1f7cc278e273488756be1d6a6dab3, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  line: You don't always need to fly. Look at me for example, I have wings but will
+    never be able to fly. But we adapted and now I use my wings to swim. You could
+    adapt like me and climb the mountain. You will make it back to your family in
+    no time.
+  speaker: Penguin
+  lastLine: 0

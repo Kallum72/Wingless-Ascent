@@ -15,7 +15,7 @@ public class DialogueGiver : MonoBehaviour
     {
         if (CanInteract && CanSpeak)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(dialogueManager.progress))
             {
 
                 CanSpeak = false;

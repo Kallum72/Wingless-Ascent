@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
     public Image dialogueBG;
     int currentLine;
 
+    public KeyCode progress;
+
     Dialogue currentDialogue;
     void Start()
     {
@@ -23,14 +25,13 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(progress))
         {
             if (inDialogue)
             {
                 if (currentDialogue.lines.Length - 1 <= currentLine)
                 {
                     inDialogue = false;
-                    Debug.Log("It end");
                     speaker.gameObject.SetActive(false);
                     dialogueBG.gameObject.SetActive(false);
 
@@ -39,7 +40,6 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("It no end");
 
                     currentLine++;
                     bodyText.text = currentDialogue.lines[currentLine].line;

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff2e965517313374fb1414d5b69c2f0a, type: 3}
+  m_Name: Penguin
+  m_EditorClassIdentifier: 
+  lines:
+  - {fileID: 11400000, guid: 4233bc136574a264dad7ab891c226bba, type: 2}
+  - {fileID: 11400000, guid: 71d01f4a6689e4a4f86f8c1fefac3879, type: 2}
+  - {fileID: 11400000, guid: dbf86d2cbdd8d3649b2316ea6bb2e59e, type: 2}
+  - {fileID: 11400000, guid: cadbadc0c1275154086cb0cca7c85c9a, type: 2}
+  - {fileID: 11400000, guid: 85781898f184d674aa87d0c905c90e22, type: 2}
+  dialogueBox: {fileID: 21300000, guid: 228a3adaf70cb73469157a1d928c3f60, type: 3}

@@ -11,6 +11,8 @@ public class HandGrab : MonoBehaviour
 
     public KeyCode myKey;
     public KeyCode myKeyUp;
+
+    public GameObject armature;
     void Start()
     {
         
@@ -25,9 +27,35 @@ public class HandGrab : MonoBehaviour
         if (Input.GetKey(myKey) || Input.GetKey(myKeyUp))
         {
             amHolding = true;
+            if (gameObject.GetComponent<FixedJoint>())
+            {
+                if (gameObject.GetComponent<FixedJoint>().connectedBody.gameObject.GetComponent<Rigidbody>() != null)
+                {
+                     Debug.Log("Climbing!");
+                    List<Rigidbody> rb = new List<Rigidbody>();
+                    foreach (Rigidbody rigid in armature.gameObject.GetComponentsInChildren<Rigidbody>())
+                    {
+                        rb.Add(rigid);
+                        rigid.useGravity = false;
+                    } 
+                }
+                
+                
+                   
+            }
         }
         else
         {
+            if (gameObject.GetComponent<FixedJoint>())
+            {
+                List<Rigidbody> rb = new List<Rigidbody>();
+                foreach (Rigidbody rigid in armature.gameObject.GetComponentsInChildren<Rigidbody>())
+                {
+                    rb.Add(rigid);
+                    rigid.useGravity = true;
+                }
+
+            }
             amHolding = false;
         }
 

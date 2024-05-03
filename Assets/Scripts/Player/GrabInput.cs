@@ -97,12 +97,16 @@ public class GrabInput : MonoBehaviour
 
         if (Input.GetKey(KeyCodeRightUp))
         {
-            //anim.SetBool("LeftUp", true);
+            anim.SetFloat("LeftX", V2Input.x);
+            anim.SetFloat("LeftY", V2Input.y);
+            anim.SetBool("HandLeftUp", true);
+            amControllingArm = true;
             holdRight = true;
         }
         else
         {
-          //  anim.SetBool("LeftUp", false);
+            amControllingArm = false;
+            anim.SetBool("HandLeftUp", false);
             holdRight = false;
         }
 
