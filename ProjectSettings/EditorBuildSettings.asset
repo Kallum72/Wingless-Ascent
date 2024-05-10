@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes 1/SampleScene.unity
-    guid: 6236955e2da20c44aa19f0b1e0608cda
-  - enabled: 1
     path: Assets/Scenes 1/MainMenuScene.unity
     guid: 1daf803df6128834cac3b98cf40a1d0a
+  - enabled: 1
+    path: Assets/Scenes 1/TerrrainV2.unity
+    guid: 8e11be63cce078149bea1314ed16936d
   - enabled: 1
     path: Assets/Scenes 1/OptionsScreen.unity
     guid: b06d8da9ee063c343920314e42e58c21

@@ -46,10 +46,10 @@ public class CameraControl : MonoBehaviour
 
         mouseY = Mathf.Clamp(mouseY, -75, 60);
 
-        Quaternion rootRotation = Quaternion.Euler(0, mouseX, -mouseY);
+        Quaternion rootRotation = Quaternion.Euler(0, mouseX, -mouseY - 2);
 
         root.rotation = rootRotation;
         hipJoint.targetRotation = Quaternion.Euler(0, -mouseX, 0);
-        stomachJoint.targetRotation = Quaternion.Euler(-mouseY + stomachOffset, 0, 0);
+       //    stomachJoint.targetRotation = Quaternion.Euler(-mouseY + stomachOffset, 0, 0);
     }
 }

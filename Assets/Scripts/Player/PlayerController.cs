@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Grounded ground;
 
     public PlayerInput playerInput;
+    public KeyCode jumpKey;
     [SerializeField] Vector3 moveDirection = Vector3.zero;
     void Awake()
     {
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
         hips.AddForce(moveDirection.normalized * speed * Time.deltaTime, ForceMode.Impulse);
 
   
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(jumpKey))
             {
                 Jump();
             }
